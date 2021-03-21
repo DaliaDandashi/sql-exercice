@@ -28,3 +28,13 @@ SELECT employees.name,companies.name,companies.date from companies,employees;
 select employees.name from companies inner join employees ON companies.ID = employees.ID WHERE DATE<"2000";
 
 select companies.name from companies inner join employees ON companies.ID = employees.ID where role="graphic designer";
+
+select max(points) as highestpt from students;
+
+select avg(points) from students;
+
+select count(points) from students WHERE points="500";
+
+select name from students WHERE name like "%s%";
+
+SELECT name FROM students GROUP BY  name ORDER By points DESC;
