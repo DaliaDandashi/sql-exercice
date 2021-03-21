@@ -22,3 +22,9 @@ select name,age,gender,Points from students where name="layal";
 UPDATE graduates set Graduation="08/09/2018" where name="layal";
 
 DELETE from students where name="layal";
+
+SELECT employees.name,companies.name,companies.date from companies,employees;
+
+select employees.name from companies inner join employees ON companies.ID = employees.ID WHERE DATE<"2000";
+
+select companies.name from companies inner join employees ON companies.ID = employees.ID where role="graphic designer";
